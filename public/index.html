@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080b14"><title>OSINTCORE — Intelligence Workspace</title>
+<link rel="stylesheet" href="/styles.css"><script src="/config.js"></script><script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+</head><body><main class="wrap">
+<header class="brand"><div class="mark">OC</div><div><b>OSINTCORE</b><small>OPEN-SOURCE INTELLIGENCE</small></div><span class="secure">● AUTHENTICATED ACCESS</span></header>
+<section id="auth" class="auth-card">
+ <div class="tabs"><button id="loginTab" class="tab active" type="button">Giriş yap</button><button id="registerTab" class="tab" type="button">Kayıt ol</button></div>
+ <div class="intro"><div class="eyebrow">INTELLIGENCE WORKSPACE</div><h1 id="formTitle">Tekrar hoş geldin.</h1><p id="formSub">OSINTCORE hesabına güvenli şekilde giriş yap.</p></div>
+ <form id="authForm">
+  <label>E-posta adresi<input id="email" type="email" autocomplete="email" placeholder="ornek@mail.com" required maxlength="254"></label>
+  <label>Şifre<input id="password" type="password" autocomplete="current-password" placeholder="En az 12 karakter" required minlength="12" maxlength="128"></label>
+  <div class="captcha-wrap"><div class="h-captcha" id="hcaptcha" data-sitekey="" data-theme="dark"></div><p class="micro">hCaptcha doğrulaması zorunludur.</p></div>
+  <button class="primary" id="submitBtn" type="submit">Giriş yap <span>→</span></button>
+  <p class="message" id="message" role="status"></p>
+ </form>
+ <form id="verifyForm" class="hidden">
+  <div class="eyebrow">E-POSTA DOĞRULAMA</div>
+  <h1 id="verifyTitle">Kod Gönderildi</h1>
+  <p id="verifySub">Lütfen osintcore@gmail.com adresinden gelen 6 haneli doğrulama kodunu girin.</p>
+  <label>Doğrulama Kodu<input id="verifyCode" type="text" placeholder="123456" required maxlength="6" pattern="[0-9]{6}"></label>
+  <button class="primary" id="verifyBtn" type="submit">Kodu Doğrula <span>→</span></button>
+  <p class="message" id="verifyMessage" role="status"></p>
+ </form>
+ <p class="legal">Devam ederek yalnızca izinli ve herkese açık kaynakları araştırma kurallarını kabul etmiş olursun.</p>
+</section>
+<section id="workspace" class="workspace hidden">
+ <div class="workspace-head"><div><div class="eyebrow">CONTROL CENTER</div><h1>Hoş geldin.</h1><p id="userEmail" class="muted"></p></div><button id="logout" class="secondary">Çıkış yap</button></div>
+ <div class="banner"><div><span class="eyebrow">OSINTCORE WORKSPACE</span><h2>Açık kaynak araştırma alanın hazır.</h2><p>Herkese açık içerik bağlantılarını düzenle, kaynaklarını kaydet ve raporlarını oluştur.</p></div><div class="orb">⌁</div></div>
+ <div class="platforms">
+  <article><i>D</i><b>Discord</b><small>İzinli, herkese açık sunucu ve davet bilgileri</small></article>
+  <article><i>◎</i><b>Instagram</b><small>Herkese açık profil ve içerik bağlantıları</small></article>
+  <article><i>▶</i><b>YouTube</b><small>Kanal ve video kaynakları</small></article>
+  <article><i>♪</i><b>TikTok</b><small>Herkese açık profil ve içerikler</small></article>
+ </div>
+ <div class="notice">Hesap sistemi ve hCaptcha sunucu tarafında doğrulanır. Platformlardan otomatik veri çekme modülleri ayrıca API/izin entegrasyonu gerektirir. Gizli hesap, özel mesaj veya hassas kişisel veri erişimi yoktur.</div>
+</section>
+<footer>OSINTCORE · Secure workspace · v1.0</footer></main><script src="/app.js"></script></body></html>
